@@ -1,0 +1,24 @@
+{% extends "hello/main.html" %}
+
+{% block title %}
+    add news
+{% endblock title %}
+
+{% block content %}
+    <div class="feautures">
+        <h1>Add news</h1>
+        <form method="post">
+            {% csrf_token %}
+
+            {{form.title}}<br>
+            {{form.anons}}<br>
+            {{form.text}}<br>
+            {{form.date}}<br>
+
+            <span class="invalid_form_error">{{error}}</span>
+            <button type="submit" class="btn btn-success">Submit</button>
+            
+        </form>
+    </div>
+
+{% endblock content %}

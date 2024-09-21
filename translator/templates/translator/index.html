@@ -1,0 +1,18 @@
+{% extends "hello/main.html" %}
+
+{% block title %}
+    translator html
+{% endblock title %}
+
+{% block content %}
+    <div class="feautures">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.target_language }}<br><br>
+            {{ form.text }}<br><br>
+
+            <input type="submit" value="Submit"><br><br>
+            {{text}}
+        </form>
+    </div>
+{% endblock content %}
