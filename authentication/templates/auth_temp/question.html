@@ -1,0 +1,14 @@
+{% extends "hello/main.html" %}
+
+{% block title %}
+    login / register?
+{% endblock title %}
+
+{% block content %}
+
+    <div class="feautures">
+        <a href="{% url "register" %}" class="btn btn-primary">register</a>
+        <a href="{% url "login" %}" class="btn btn-primary">login</a>
+    </div>
+
+{% endblock content %}

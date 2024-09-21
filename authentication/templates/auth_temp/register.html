@@ -1,0 +1,23 @@
+{% extends "hello/main.html" %} 
+
+{% block title %}
+    register
+{% endblock title %}
+
+{% block content %}
+    <div class="feautures">
+        <h1>register</h1>
+        <form method="post">
+            {% csrf_token %}
+
+            {{form.username}}<br>
+            {{form.email}}<br>
+            {{form.password1}}<br>
+            {{form.password2}}<br>
+
+            <span class="invalid_form_error">{{errors}}</span><br><br>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+
+{% endblock content %}

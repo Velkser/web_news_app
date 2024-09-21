@@ -1,0 +1,19 @@
+{% extends "hello/main.html" %}
+
+{% block title %}
+    about html
+{% endblock title %}
+
+{% block content %}
+    <h1>hello world</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, amet dolores aperiam excepturi laudantium est impedit dolor maiores quisquam inventore unde odio iusto aspernatur. Voluptatem aut numquam placeat dolor necessitatibus!</p>
+
+    {% for i in ids %}
+        {% if i != 4 %}
+            <h1>{{i | lower}}</h1>
+        {% else %}
+            <h1>123</h1>
+        {% endif %}
+    {% endfor %}
+{% endblock content %}
+
