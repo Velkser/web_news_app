@@ -38,19 +38,19 @@ python manage.py runserver
 # Applications
 
 ## Hello
-The hello application is responsible for displaying a welcome page. It may include a simple greeting and basic information about the project.
+The `hello` application is responsible for displaying a welcome page. It may include a simple greeting and basic information about the project.
 
 ## News
-The news application is designed for managing news articles. It includes functionality for creating, editing, deleting, and displaying news articles.
+The `news` application is designed for managing news articles. It includes functionality for creating, editing, deleting, and displaying news articles.
 
 ## Authentication
-The authentication application handles user authentication. It includes registration, login, logout, and password recovery functionalities.
+The `authentication` application handles user authentication. It includes registration, login, logout, and password recovery functionalities.
 
 ## Translator
-The translator application provides text translation functionality. It may use third-party APIs to translate text from one language to another
+The `translator` application provides text translation functionality. It may use third-party APIs to translate text from one language to another
 
 ## Configuration
-Before running the project, make sure to configure all necessary settings in the settings.py file, such as database settings, authentication parameters, and API keys for the translator application.
+Before running the project, make sure to configure all necessary settings in the `settings.py` file, such as database settings, authentication parameters, and API keys for the translator application.
 
 ## License
 This project is licensed under the MIT License. For more details, see the LICENSE file.
